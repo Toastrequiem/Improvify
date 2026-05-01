@@ -78,7 +78,7 @@ def get_playlists():
 
 
     randomList = []
-    playlistID = '55H3wrtWcniGcDfoglCLIH' # Enter Playlist ID here!
+    playlistID = '' # Enter Playlist ID here!
     playlistSize = (requests.get(API_BASE_URL + 'playlists/' + playlistID + '/tracks?limit=1&offset=0',
                                 headers=headers)).json()["total"]
 
